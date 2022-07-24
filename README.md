@@ -1,0 +1,2 @@
+# Bible Verse Searcher
+This repo hosts a website that utilizes the bible api and offers users capacity to access verses or chapters in one of the three mainstream bibles. The website is posted at: https://wustlcse204.github.io/10-final-project-individual-peter-rong/

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <meta name="author" content="Peter Rong">
+        <title>Bible Searcher</title>
+    </head>
+
+    <body>
+        <div class = "header">
+            <h1>Bible Searcher</h1>
+        </div>
+        
+        <div class="main">       
+            
+            <div class = "intro">
+
+                <h2>Description</h2>
+                <p>Tired of managing different books and versions of the bible and finding verses? This webpage can help.
+                    We feature the 3 commonly referenced bible books listed below with respective authors in paranthesis
+                     and can find verses according to chapter and verse number</p>
+
+                <img src = "images/bibles.jpg" class = "bible_image" alt = "bible image">
+            </div>
+
+            <div class= "list_container">
+
+                <ul>
+                    <li onclick = openbible(0)> Gênesis (Moisés)</li>
+                    <li onclick = openbible(1)> Isaías (Isaías)</li>
+                    <li onclick = openbible(2)> Jeremias (Jeremias)</li>
+                </ul>
+
+            </div>
+
+            <div class = "bible" id = "gn"> 
+                
+                <p class = "back_button" onclick = home()> Back to home</p>
+                
+                <div class = "bible_description">
+                    <h2>Gênesis</h2>
+                   
+                    <p class = "bible_description_text"> This Bible's name is Gênesis, its author is Moisés and it has 50 chapters, enter the chapter number 
+                        and verse number to see the respective verse. </p>
+
+                    <img src = "images/genesis.jpg" class = "bible_image" alt = "bible image">
+
+                </div>
+    
+            </div>
+    
+            <div class = "bible" id = "is">
+
+                <p class = "back_button" onclick = home()> Back to home</p>
+
+                <div class = "bible_description">
+                    <h2>Isaías</h2>
+                    <p class = "bible_description_text">This Bible book's name is Isaías, its author is Isaías and it has 66 chapters, enter the chapter number 
+                        and verse number to see the respective verse. </p>
+
+                        <img src = "images/isaiah.jpg" class = "bible_image" alt = "bible image">
+                </div>
+    
+            </div>
+    
+            <div class = "bible" id = "jr">
+
+                <p class = "back_button" onclick = home()> Back to home</p>
+
+                <div class = "bible_description">
+                    <h2>Jeremias</h2>
+                    <p class = "bible_description_text">This Bible book's name is Jeremias, its author is Jeremias and it has 66 chapters, enter the chapter number 
+                        and verse number to see the respective verse. </p>
+
+                    <img src = "images/jeremiah.jpg" class = "bible_image" alt = "bible image">
+                </div>
+
+            </div>
+
+            <form class="search_form">
+                <input name="search_chapter" id="chapter" type="text" placeholder="Chapter" autocomplete="off">
+                <input name="search_verse" id="verse" type="text" placeholder="Verse" autocomplete = "off">
+                <input name="button" id="button" type="submit" value="Search!">
+            </form>
+
+            <div class = "bible_verse">
+                <p id = verse_text></p>
+            </div>
+
+            <p id = clear_verse onclick = clearVerse()>Clear Verse</p>
+
+        </div>
+
+        <script src="script.js" ></script>
+    </body>
+</html>
